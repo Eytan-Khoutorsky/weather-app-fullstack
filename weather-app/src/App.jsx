@@ -168,6 +168,28 @@ function App() {
       {error && <p className="error">{error}</p>}
       {weather && <WeatherCard weather={weather} firstDay={firstDayLabel} />}
       {forecast.length > 0 && <ForecastList forecast={forecast} />}
+      <div
+        style={{
+          marginTop: "40px",
+          padding: "15px",
+          borderTop: "1px solid rgba(255,255,255,0.2)",
+          fontSize: "13px",
+          opacity: 0.9,
+        }}
+      >
+        <p>
+          <strong>Built by Eytan Khoutorsky</strong>
+        </p>
+
+        <p>
+          The Product Manager Accelerator Program supports product management
+          professionals at every stage of their careers, from students entering
+          the field to experienced leaders advancing to executive roles. Through
+          hands-on training, mentorship, and real-world projects, the program
+          helps individuals develop practical product management and leadership
+          skills.
+        </p>
+      </div>
     </div>
   );
 }
