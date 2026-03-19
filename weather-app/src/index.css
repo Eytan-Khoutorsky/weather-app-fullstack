@@ -83,3 +83,31 @@ button {
   padding: 8px;
   border-radius: 8px;
 }
+
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start; /* prevents weird centering on small screens */
+  }
+
+  .app {
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .search {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .stats {
+    gap: 20px;
+  }
+}
